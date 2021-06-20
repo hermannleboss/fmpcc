@@ -40,7 +40,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [ solution URL here](https://hermannleboss.github.io/fmpcc/)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
@@ -97,9 +97,9 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Hermann EHO](https://www.hermanneho.com/)
+- Frontend Mentor - [@hermanneho](https://www.frontendmentor.io/profile/hermannleboss)
+- Twitter - [@hermanneho](https://www.twitter.com/hermanneho)
 
 **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 

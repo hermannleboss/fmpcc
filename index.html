@@ -29,49 +29,6 @@
             color: hsl(228, 45%, 44%);
         }
         
-        .grid-container {
-            display: grid;
-            grid-template-columns: 50% 50%;
-            margin: 5%;
-            margin-top: 10%;
-            border-radius: 15px;
-        }
-        
-        .grid-container>div {
-            text-align: center;
-            padding: 20px 0;
-            font-size: 30px;
-            background-color: hsl(244, 38%, 16%);
-        }
-        
-        .grid-container-3 {
-            display: grid;
-            grid-template-columns: 33% 33% 33%;
-            margin-top: 50px;
-            justify-content: left;
-        }
-        
-        .grid-item {
-            /*background-color: rgba(255, 255, 255, 0.8);*/
-            padding: 20px;
-            padding-left: 0px;
-            font-size: 30px;
-            text-align: center;
-        }
-        
-        .grid-item+div {
-            font-weight: 700;
-        }
-        
-        .grid-item>div {
-            text-align: left;
-        }
-        
-        .item1 {
-            grid-column: 1/1;
-            padding-left: 300px;
-        }
-        
         p {
             color: hsla(0, 0%, 100%, 0.75);
         }
@@ -85,36 +42,155 @@
             font-weight: 400;
             color: hsla(0, 0%, 100%, 0.6);
         }
+        /* Extra small devices (phones, 600px and down) */
+        /* Computer (portrait tablets and large phones, 600px and up) */
         
-        .bg-img {
-            background-image: url('images/image-header-desktop.jpg');
-            background-repeat: no-repeat, repeat;
-            background-size: cover;
-            overflow: hidden;
-            padding: -50px;
+        @media only screen and (min-width: 1440px) {
+            * {
+                text-align: left;
+            }
+            .grid-container {
+                display: grid;
+                grid-template-columns: 50% 50%;
+                margin: 5%;
+                margin-top: 10%;
+                border-radius: 15px;
+            }
+            .grid-container>div {
+                text-align: center;
+                font-size: 27px;
+                background-color: hsl(244, 38%, 16%);
+            }
+            .grid-container-3 {
+                display: grid;
+                grid-template-columns: 33% 33% 33%;
+                margin-top: 50px;
+                justify-content: left;
+            }
+            .grid-item {
+                /*background-color: rgba(255, 255, 255, 0.8);*/
+                padding: 20px;
+                padding-left: 0px;
+                font-size: 20px;
+                text-align: center;
+            }
+            .grid-item+div {
+                font-weight: 700;
+                font-size: larger;
+            }
+            .grid-item>div {
+                text-align: left;
+            }
+            .item1 {
+                border-radius: 10px 0 0 10px;
+                grid-column: 1/1;
+                padding-left: 300px;
+                padding: 70px;
+                text-align: left;
+            }
+            .bg-img-sm {
+                display: none;
+            }
+            .bg-img {
+                border-radius: 0 10px 10px 0;
+                background-image: url('images/image-header-desktop.jpg');
+                background-repeat: no-repeat, repeat;
+                background-size: cover;
+                overflow: hidden;
+                padding: -50px;
+            }
+            .bg-img div {
+                width: 100%;
+                height: 110%;
+                background-color: hsl(277, 64%, 61%);
+                mix-blend-mode: multiply;
+                margin-top: -20px;
+                margin-bottom: -40px;
+                overflow: hidden;
+            }
         }
         
-        .bg-img div {
-            width: 100%;
-            height: 110%;
-            background-color: hsl(277, 64%, 61%);
-            mix-blend-mode: multiply;
-            margin-top: -20px;
-            margin-bottom: -40px;
-            overflow: hidden;
+        @media only screen and (max-width: 375px) {
+            h1 {
+                font-size: 0.9em;
+            }
+            p {
+                font-size: 0.5em;
+                line-height: 30px;
+            }
+            .grid-container {
+                display: grid;
+                grid-template-columns: 100%;
+                margin: 5%;
+                margin-top: 10%;
+                border-radius: 25px;
+            }
+            .grid-container>div {
+                text-align: center;
+                font-size: 30px;
+                background-color: hsl(244, 38%, 16%);
+            }
+            .grid-container-3 {
+                display: grid;
+                grid-template-columns: 100%;
+                margin-top: 20px;
+                justify-content: left;
+            }
+            .grid-item {
+                /*background-color: rgba(255, 255, 255, 0.8);*/
+                padding: 15px;
+                padding-left: 0px;
+                font-size: 30px;
+                text-align: center;
+            }
+            .grid-item+div {
+                font-weight: 700;
+            }
+            .grid-item>div {
+                text-align: center;
+            }
+            .item1 {
+                border-radius: 0 0 10px 10px;
+                grid-column: 1/1;
+                padding: 30px;
+            }
+            .bg-img-sm {
+                border-radius: 10px 10px 0 0;
+                background-image: url('images/image-header-desktop.jpg');
+                background-repeat: no-repeat, repeat;
+                background-size: cover;
+                overflow: hidden;
+                padding: -50px;
+            }
+            .bg-img-sm div {
+                width: 100%;
+                height: 100px;
+                background-color: hsl(277, 64%, 61%);
+                mix-blend-mode: multiply;
+                margin-top: -20px;
+                margin-bottom: -40px;
+                overflow: hidden;
+            }
+            .bg-img {
+                display: none;
+            }
         }
     </style>
 </head>
 
 <body>
     <div class="grid-container">
-        <div class="item1" style="padding: 70px; text-align: left;">
+        <div class="bg-img-sm">
+            <div style="height: 300px;"></div>
+        </div>
+        <div class="item1">
             <h1 style="margin: 0px;"> Get <span>insights</span> that help your business grow.</h1>
             <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
             <div class="grid-container-3">
-                <div class="grid-item">
-                    <div style="
-                    font-weight: 700;">10k+</div>
+                <div class="grid-item" style="
+                font-weight: 700;
+                font-size: larger;">
+                    <div>10k+</div>
                     <div class="stat-headings">COMPANIES</div>
                 </div>
                 <div class="grid-item">
@@ -122,12 +198,12 @@
                     <div class="stat-headings">TEMPLATES</div>
                 </div>
                 <div class="grid-item">
-                    <div>12m+</div>
+                    <div>12 M+</div>
                     <div class="stat-headings">QUERIES</div>
                 </div>
             </div>
         </div>
-        <div class="bg-img" style="background-color: hsl(277, 64%, 61%)">
+        <div class="bg-img">
             <div></div>
         </div>
     </div>
