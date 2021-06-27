@@ -36,18 +36,26 @@
         span {
             color: hsl(277, 64%, 61%);
         }
-        
-        .stat-headings {
-            font-size: small;
-            font-weight: 400;
-            color: hsla(0, 0%, 100%, 0.6);
-        }
         /* Extra small devices (phones, 600px and down) */
         /* Computer (portrait tablets and large phones, 600px and up) */
         
-        @media only screen and (min-width: 1440px) {
+        @media (min-width: 992px) {
             * {
                 text-align: left;
+            }
+            h1 {
+                font-size: 3vw;
+            }
+            p {
+                font-size: 1.5vw;
+            }
+            .counter {
+                font-size: 2vw;
+            }
+            .counter-heading {
+                font-size: 1.1vw;
+                font-weight: 400;
+                color: hsla(0, 0%, 100%, 0.6);
             }
             .grid-container {
                 display: grid;
@@ -110,7 +118,7 @@
             }
         }
         
-        @media only screen and (max-width: 375px) {
+        @media (max-width: 992px) {
             h1 {
                 font-size: 0.9em;
             }
@@ -174,6 +182,15 @@
             .bg-img {
                 display: none;
             }
+            .counter {
+                font-size: 5vw;
+                margin: 5px;
+            }
+            .counter-heading {
+                font-size: 3.5vw;
+                font-weight: 400;
+                color: hsla(0, 0%, 100%, 0.6);
+            }
         }
     </style>
 </head>
@@ -190,16 +207,16 @@
                 <div class="grid-item" style="
                 font-weight: 700;
                 font-size: larger;">
-                    <div>10k+</div>
-                    <div class="stat-headings">COMPANIES</div>
+                    <div class="counter">10k+</div>
+                    <div class="counter-heading">COMPANIES</div>
                 </div>
                 <div class="grid-item">
-                    <div>314</div>
-                    <div class="stat-headings">TEMPLATES</div>
+                    <div class="counter">314</div>
+                    <div class="counter-heading">TEMPLATES</div>
                 </div>
                 <div class="grid-item">
-                    <div>12 M+</div>
-                    <div class="stat-headings">QUERIES</div>
+                    <div class="counter">12 M+</div>
+                    <div class="counter-heading">QUERIES</div>
                 </div>
             </div>
         </div>
